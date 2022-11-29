@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <title>Gym Website</title>
+
+    <style>
+        body {
+            background: url("img/musicimg.jpg");
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+        }
+
+        .left {
+            /* border: 3px ridge red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 150px;
+        }
+        .mid {
+            border: 5px ridge white;
+            margin: 20px auto;
+            display: block;
+            width: 46%;
+            border-style: dotted ridge dashed solid;
+            border-radius: 20px;
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 5px ridge blue; */
+            position: absolute;
+            top: 20px;
+            right: 2px;
+        }
+        .left div
+        {
+            font-size: 16px;
+            text-align: center;
+        }
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .left img {
+            width: 136px;
+            filter: invert(100%);
+        }
+
+        .btn {
+            cursor: pointer;
+            color: black;
+            background-color: cyan;
+            padding: 2px 2px;
+            margin: 2px 2px;
+            border-radius: 20px;
+            font-size: 25px;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+        }
+
+        .btn:hover {
+            background-color: white;
+        }
+        .container {
+        border: 2px solid white;
+        margin: 110px 70px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .container h2 {
+        text-align: center;
+    }
+    .container button {
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+    }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/chrome_logo_PNG29.png" alt="">
+            <div style="text-align:center;">Ram Mohan's Website</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Social Media</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Chat With Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Hello Guys! Welcome to my Website..!!</h2>
+        <form action="#">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
